@@ -13,7 +13,7 @@ def movies_category(movie_list, category):
 #4
 def average_score(movie_list):
     if not movie_list:
-        return 0  # Return 0 if the list is empty to avoid division by zero
+        return 0  
     total_score = sum(movie['imdb'] for movie in movie_list)
     return total_score / len(movie_list)
 
