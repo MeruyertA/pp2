@@ -12,27 +12,26 @@ class class1():
 #2
 class Shape:
     def __init__(self):
-        self.area = 0
+        pass  
 
-    def calc_area(self):
-        return self.area
+    def area(self):
+        return 0
 
 class Square(Shape):
     def __init__(self, length):
-        super().__init()
         self.length = length
 
-    def calculate_area(self):
+    def area(self):
         return self.length**2
-           
+
 #3
-class Rectangle(Shape):
+class Rectangle(Shape):  
     def __init__(self, length, width):
         super().__init()
         self.length = length
         self.width = width
 
-    def calculate_area(self):
+    def area(self):
         return self.length * self.width
 
 #4
